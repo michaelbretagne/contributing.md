@@ -167,6 +167,30 @@ $ git branch -d feature/encrypt-password
 Congratulations! You have successfully contribute to an open source project!
 
 
+### Note
+
+If you are pairing with someone that created a new branch on the upstream repo, you will need to add that branch into your forked project.
+
+Fetch the branches
+'''bash
+$ git fetch upstream
+'''
+
+You will see the list of new branches created in the upstream repo. Let say you want to get the branch called chore/#123
+
+Create a new branch on local repo. I will call the new branch mynewbranch
+'''bash
+$ git checkout -b nynewbranch upstream/chore/#123
+'''
+
+Push you newly repo to your forked repo on GitHub
+'''bash
+$ git push -u origin mynewbranch
+
+Et voilà, you can start you working on the new branch with your teammate.
+
+
+
 
 
 
