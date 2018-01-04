@@ -186,6 +186,7 @@ $ git checkout -b nynewbranch upstream/chore/#123
 Push you newly repo to your forked repo on GitHub
 '''bash
 $ git push -u origin mynewbranch
+'''
 
 Et voilà, you can start you working on the new branch with your teammate.
 
